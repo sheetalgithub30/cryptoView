@@ -234,5 +234,13 @@ canvas{
   margin: 8rem 15rem;
 }
 
+.prices{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 
 

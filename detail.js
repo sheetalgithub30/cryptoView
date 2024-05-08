@@ -33,6 +33,21 @@ if (!params.has("id")) {
 }
 
 function showDetails(obj) {
+  const prices = document.createElement("div");
+  prices.classList.add("prices");
+
+  const ind = document.createElement("p");
+  ind.innerHTML= "₹ "+obj.market_data.current_price.inr;
+  const usd = document.createElement("p");
+  usd.innerHTML ="$ "+ obj.market_data.current_price.usd;
+  const eur = document.createElement("p");
+  eur.innerHTML ="€ "+ obj.market_data.current_price.eur;
+  const btc = document.createElement("p");
+  btc.innerHTML = "₿ "+ obj.market_data.current_price.btc;
+
+  
+  prices.append(ind,usd,eur,btc);
+  coinDetails.append(prices);
   const img = document.createElement("img");
   img.src = obj.image.large;
   coinImage.append(img);
