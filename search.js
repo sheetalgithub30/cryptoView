@@ -47,7 +47,7 @@ function showSearchResults(coins) {
     const anchor = document.createElement("a");
     anchor.classList.add("more");
     anchor.innerText = "More Info";
-    anchor.href = "details.html?id=" + coin.id;
+    anchor.href = "detail.html?id=" + coin.id;
 
 
     result.append(sno, img, name,anchor);
